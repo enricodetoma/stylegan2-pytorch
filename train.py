@@ -441,7 +441,7 @@ if __name__ == "__main__":
 
     if args.distributed:
         torch.cuda.set_device(args.local_rank)
-        torch.distributed.init_process_group(backend="nccl", init_method="env://")
+        torch.distributed.init_process_group(backend="gloo", init_method="env://")
         synchronize()
 
     args.latent = 512

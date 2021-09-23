@@ -131,3 +131,5 @@ dmypy.json
 wandb/
 *.lmdb/
 *.pkl
+modern_paintings/
+modern_paintings_resized/
